@@ -27,7 +27,7 @@ func createBar(progress float64) string {
 	choice := bars[1]
 
 	pb := ""
-	filled := int(math.Floor(progress / 10))
+	filled := int(math.Min(1, math.Floor(progress / 10)))
 	for i := 0; i < filled; i++ {
 		pb += choice[1]
 	}
