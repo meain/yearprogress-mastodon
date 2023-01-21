@@ -24,7 +24,7 @@ func stats() (float64, float64) {
 
 func createBar(progress float64) string {
 	var bars = [][]string{{"⬜", "⬛"}, {"░", "█"}, {"▱", "▰"}, {"▯", "▮"}}
-	choice := bars[0]
+	choice := bars[1]
 
 	pb := ""
 	filled := int(math.Floor(progress / 10))
